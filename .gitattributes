@@ -1,0 +1,34 @@
+# Final de linha, travado de propósito.
+#
+# Sem isso, o resultado depende da configuração de cada máquina. Um cliente de
+# Windows com `core.autocrlf` ligado (que é o padrão do Git for Windows) receberia
+# os scripts com CRLF, e aí o bash engasga com `$'\r': command not found`.
+#
+# Isso quebraria justamente o /atualizar-sistema, que é quem traz os arquivos pra
+# máquina dele. E quebraria depois da entrega, não durante, que é o pior momento.
+
+# Por padrão, o Git decide o que é texto e normaliza pra LF no repositório.
+* text=auto
+
+# Script e código: LF sempre, nos dois sistemas, sem depender de configuração.
+*.sh    text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.yml   text eol=lf
+
+# Binário: nunca tocar. Converter final de linha aqui corrompe o arquivo.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.svg   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.xlsx  binary
+*.mp4   binary

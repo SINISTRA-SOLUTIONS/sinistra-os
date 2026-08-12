@@ -1,0 +1,76 @@
+# O que NUNCA sai dessa máquina
+#
+# Tudo que não está listado aqui vai pra cópia de segurança, que fica num
+# repositório privado da Sinistra. Antes de acrescentar coisa nova ao sistema,
+# pergunte: isso pode morar num servidor que não é do cliente?
+
+# --- Credenciais. Nada aqui pode subir, em hipótese nenhuma ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+token.json
+service-account*.json
+*-credentials.json
+
+# --- Dados crus do cliente ---
+#
+# dados/ é onde ele solta planilha de faturamento, lista de clientes, export do
+# ERP. É o material com maior chance de conter dado pessoal de terceiro, e por
+# isso nunca sai da máquina dele. O sistema lê, analisa, e o que sobe é só a
+# conclusão que ele mandou salvar.
+dados/*
+!dados/README.md
+
+# --- Rastro do Claude na máquina ---
+#
+# .claude/projects/ guarda o histórico das conversas, e é lá que a mensagem de
+# setup com as credenciais fica registrada. Nunca versionar.
+.claude/projects/
+.claude/sessions/
+.claude/shell-snapshots/
+.claude/telemetry/
+.claude/file-history/
+.claude/backups/
+.claude/settings.local.json
+
+# --- Sistema operacional e editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# --- Temporários e dependências ---
+node_modules/
+*.log
+*.tmp
+~$*
+
+# ============================================================
+# NÃO IGNORAR NADA ABAIXO. Está aqui como aviso, não como regra.
+#
+# .sinistra/estado.json: guarda a versão instalada e o commit recebido por esse
+# cliente. Precisa ir pra cópia de segurança, é o que sobrevive quando ele
+# restaura um backup, e é por ele que a atualização sabe o que ele já tem.
+#
+# _memoria/ e identidade/: o cérebro e o rosto do negócio. É o ativo mais
+# valioso da pasta e o que mais dói perder. Sempre versionado.
+#
+# .claude/skills/: além das skills oficiais, é onde ficam as que o cliente
+# criou. Perder essas é perder trabalho pago.
+#
+# scripts/: os scripts em si vão, as chaves não. As chaves moram no .env, que
+# está bloqueado lá em cima.
+#
+# saidas/ e marketing/: o que o sistema produziu. Vai versionado de propósito.
+# Atenção: proposta, email e relatório podem carregar nome e dado de pessoa
+# real. Isso é confidencial de negócio e está coberto pela cláusula de
+# confidencialidade do contrato, não por regra técnica.
+# ============================================================

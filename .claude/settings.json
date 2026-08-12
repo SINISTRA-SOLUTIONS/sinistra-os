@@ -1,0 +1,28 @@
+{
+  "_leia": "Configuracao do Sinistra OS na pasta do cliente. E da Sinistra e e substituida a cada atualizacao. NAO tem defaultMode aqui de proposito: 'auto' vindo de settings de projeto e ignorado pelo app por seguranca, e fixar 'acceptEdits' aqui impediria a maquina de usar o modo automatico que passou a ser o padrao. O modo fica no ~/.claude/settings.json da maquina, escrito na preparacao.",
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push origin:*)",
+      "Bash(git remote:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(bash .sinistra/atualizar.sh:*)",
+      "Bash(node render.js:*)",
+      "Bash(uname:*)",
+      "Bash(node --version)",
+      "Bash(explorer:*)",
+      "Bash(open:*)"
+    ],
+    "deny": [
+      "Bash(git push sinistra:*)",
+      "Bash(git init:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  }
+}

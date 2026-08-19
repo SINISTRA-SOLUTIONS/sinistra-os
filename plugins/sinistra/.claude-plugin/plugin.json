@@ -1,0 +1,12 @@
+{
+  "name": "sinistra",
+  "displayName": "Sinistra OS",
+  "description": "Sistema operacional do negocio: carrossel, SEO, anuncio, relatorio, email e memoria da empresa, em portugues e com a cara da marca.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Sinistra LLC",
+    "url": "https://github.com/SINISTRA-SOLUTIONS"
+  },
+  "homepage": "https://github.com/SINISTRA-SOLUTIONS/sinistra-os",
+  "license": "UNLICENSED"
+}

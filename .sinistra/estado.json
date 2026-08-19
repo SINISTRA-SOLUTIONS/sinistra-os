@@ -1,9 +1,0 @@
-{
-  "_leia": "Estado da instalacao deste cliente. Preenchido pelo /instalar e atualizado pelo /atualizar-sistema. Nao esta na lista branca de proposito: e do cliente e nunca deve ser sobrescrito por uma atualizacao.",
-  "cliente": null,
-  "versao": null,
-  "commit_recebido": null,
-  "instalado_em": null,
-  "atualizado_em": null,
-  "git_dir": null
-}

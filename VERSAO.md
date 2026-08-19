@@ -1,6 +1,6 @@
 # Versão do Sinistra OS
 
-**Versão atual: 1.5**
+**Versão atual: 2.0**
 
 Se algo não funcionar, eu te dou um código curto. Manda ele junto com essa versão
 pra Sinistra que a gente já sabe o que houve.
@@ -10,6 +10,22 @@ Pra saber se saiu versão nova, é só me pedir pra **atualizar o sistema**.
 ---
 
 ## Histórico
+
+### 2.0
+
+O sistema deixou de ser uma pasta que precisa ser preparada por alguém e passou a
+se instalar sozinho. Você cria uma pasta, abre ela aqui e me pede pra instalar. Eu
+faço o resto.
+
+Duas coisas melhoraram junto:
+
+**As atualizações chegam sozinhas.** Antes você precisava me pedir. Agora, sempre
+que a Sinistra solta uma melhoria, ela aparece aqui sem você fazer nada e sem
+tocar em nada que é seu: a memória do seu negócio, sua identidade visual e tudo
+que você já produziu ficam intactos.
+
+**A parte que monta as imagens se instala sozinha também.** Antes alguém precisava
+preparar o computador antes de você começar.
 
 ### 1.5
 

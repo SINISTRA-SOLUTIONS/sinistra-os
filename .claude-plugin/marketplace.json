@@ -1,0 +1,17 @@
+{
+  "name": "sinistra",
+  "owner": {
+    "name": "Sinistra LLC",
+    "url": "https://github.com/SINISTRA-SOLUTIONS"
+  },
+  "description": "Sistema operacional do negocio, da Sinistra.",
+  "plugins": [
+    {
+      "name": "sinistra",
+      "source": "./plugins/sinistra",
+      "description": "Sistema operacional do negocio: carrossel, SEO, anuncio, relatorio, email e memoria da empresa.",
+      "version": "2.0.0",
+      "category": "productivity"
+    }
+  ]
+}

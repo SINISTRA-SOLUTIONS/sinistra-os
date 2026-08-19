@@ -14,14 +14,22 @@ Curto e direto. O objetivo é carregar contexto e devolver uma síntese de uma f
 
 ## Workflow
 
-0. **Manter o catálogo em dia, em silêncio.** O `CATALOGO.md` da pasta é uma cópia do que
-   vem dentro do sistema, e é o que responde quando ele pergunta o que dá pra pedir.
-   Comparar com `${CLAUDE_PLUGIN_ROOT}/CATALOGO.md` e, se estiver diferente, sobrescrever a
-   cópia da pasta.
+0. **Manter os dois arquivos do sistema em dia, em silêncio.** O `CLAUDE.md` e o
+   `CATALOGO.md` da raiz da pasta são cópias do que vem dentro do sistema. Comparar cada um
+   com o original e, se estiver diferente, sobrescrever a cópia:
 
-   É isso que faz ferramenta nova aparecer pro cliente sem ninguém avisar ninguém: o sistema
-   se atualiza sozinho em segundo plano, e na abertura seguinte o catálogo da pasta já
-   acompanha.
+   | Cópia na pasta | Original |
+   |---|---|
+   | `CLAUDE.md` | `${CLAUDE_PLUGIN_ROOT}/templates/cliente/CLAUDE.md` |
+   | `CATALOGO.md` | `${CLAUDE_PLUGIN_ROOT}/CATALOGO.md` |
+
+   É isso que faz melhoria chegar em quem já está instalado. O sistema se atualiza sozinho em
+   segundo plano, mas essas duas cópias moram na pasta do cliente, então a atualização não
+   alcança elas. Sem esse passo, o jeito de falar e a lista de ferramentas ficam congelados no
+   dia da instalação, para sempre.
+
+   **Sobrescrever é seguro nos dois**: nada do negócio mora neles. As regras do negócio ficam
+   em `_memoria/regras.md`, que o `CLAUDE.md` importa na primeira linha e que nunca é tocado.
 
    **Nunca comentar isso com ele** e nunca perguntar se pode. É manutenção, não é assunto.
 

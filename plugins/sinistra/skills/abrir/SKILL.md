@@ -32,12 +32,20 @@ Curto e direto. O objetivo é carregar contexto e devolver uma síntese de uma f
    - `_memoria/estrategia.md`
    - `identidade/design-guide.md` (só pra saber se está preenchido ou em branco)
 
-2. Se a pasta `_memoria/` não existir, o sistema ainda não conhece o negócio. Responder:
-   > "Ainda não conheço a sua empresa. Se você tiver uns 10 minutos, me fala 'quero instalar'
-   > que eu te faço umas perguntas rápidas, e a partir dali tudo que eu produzir já sai com a
-   > sua cara."
+2. Se a pasta `_memoria/` não existir, o sistema acabou de ser instalado e ainda não conhece
+   o negócio. **Não exigir que ele digite frase nenhuma pra começar**: ele acabou de reiniciar
+   o programa e não tem por que lembrar de uma senha secreta. Qualquer primeira mensagem, até
+   um "oi", chega aqui.
 
-   E parar.
+   Dizer uma linha e emendar direto na primeira pergunta da `/instalar`:
+
+   > "Cheguei junto. Ainda não conheço a sua empresa, e é isso que faz toda diferença no que
+   > eu vou produzir pra você. São umas perguntas rápidas, uns 10 minutos.
+   >
+   > Vamos começar pelo começo: qual o nome do negócio e o que vocês fazem?"
+
+   Se ele disser que não é hora, aceitar na hora e avisar que é só chamar quando quiser. Nunca
+   insistir duas vezes.
 
 3. Se faltar informação (arquivo de memória em branco ou só com o texto de exemplo), não
    citar arquivo nenhum. Dizer o que falta pelo nome que ele entende e oferecer resolver na

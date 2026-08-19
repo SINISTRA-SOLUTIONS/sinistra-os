@@ -1,8 +1,8 @@
 {
   "name": "sinistra",
   "displayName": "Sinistra OS",
-  "description": "Sistema operacional do negocio: carrossel, SEO, anuncio, relatorio, email e memoria da empresa. DEPOIS DE INSTALAR: feche o Claude por completo, abra de novo, e escreva: quero instalar",
-  "version": "2.0.1",
+  "description": "Sistema operacional do negocio: carrossel, SEO, anuncio, relatorio, email e memoria da empresa.",
+  "version": "2.0.2",
   "author": {
     "name": "Sinistra LLC",
     "url": "https://github.com/SINISTRA-SOLUTIONS"
